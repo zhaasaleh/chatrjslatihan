@@ -1,4 +1,56 @@
-html {
-  height: 100%;
-  width: 100%;
+/* General styles */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.title h1 {
+  text-align: center;
+  margin: 20px auto;
+}
+
+.bubbleChart,
+.barChart {
+  box-shadow: 0 0 2px black;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Desktop and Tablet Styles */
+@media (min-width: 768px) {
+  .chart {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* Distribute charts evenly */
+    gap: 20px;
+    margin: 0 20px;
+  }
+
+  .bubbleChart,
+  .barChart {
+    width: 45%;
+    /* Adjust width for two charts */
+    height: auto;
+    /* Allow charts to expand vertically */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 767px) {
+  .chart {
+    display: flex;
+    flex-direction: column;
+    /* Stack charts vertically */
+    align-items: center;
+    gap: 20px;
+    margin: 0 20px;
+  }
+
+  .bubbleChart,
+  .barChart {
+    width: 100%;
+    /* Full-width charts */
+    height: auto;
+  }
 }

@@ -4,12 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Unit Price to Sales Quantity</title>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </head>
 
 <body>
-  <canvas id="bubbleChart"></canvas>
-  <script src="script.js"></script>
+  <main>
+    <section class="title">
+      <h1>Chart Coffee Shop Sales</h1>
+    </section>
+    <section class="chart">
+      <div class="bubbleChart">
+        <h3>Unit Price to Sales Quantity</h3>
+        <canvas id="bubbleChart"></canvas>
+      </div>
+      <div class="barChart">
+        <h3>Sales Quantity per Product</h3>
+        <canvas id="barChart"></canvas>
+      </div>
+    </section>
+  </main>
+  <script src="chart.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
 </body>
+
 </html>
