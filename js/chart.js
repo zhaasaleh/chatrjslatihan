@@ -1,7 +1,7 @@
 const ctxBar = document.getElementById('barChart').getContext('2d');
 const ctxBubble = document.getElementById('bubbleChart').getContext('2d');
 
-fetch('datalatihan.json')
+fetch('json/datalatihan.json')
   .then(response => response.json())
   .then(data => {
     const processedData = processData(data);

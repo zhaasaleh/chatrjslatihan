@@ -1,7 +1,7 @@
 const ctx = document.getElementById('bubbleChart').getContext('2d');
 const productCategoryColors = {};
 
-fetch('datalatihan.json')
+fetch('json/datalatihan.json')
   .then(response => response.json())
   .then(data => {
     const processedData = processData(data);
